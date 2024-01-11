@@ -17,6 +17,8 @@
 		<p>Block elementtejä käytetään sivuston jäsentämiseen ja taittoon. Yksinkertainen esimerkki tästä on kappale p elementti. (p)</p>
 		<p>Block elementtejä käytetään usein ns. container -elementteinä, tästä hyvä esimerkki on div ja section elementti.  (p)</p>
 		<p>Joidenkin block elementien sisältö on ennalta määritelty, tällaisia esimerkiksi listat ja taulukot. (p)</p>
+		<button onclick="setClass()">taulukot</button>
+		<div id="guid3" class="hankalaa esimerkki jsharkkatyyli"
 		<h2>Taulukko (h2)</h2>
 		<p><span class= "punainen">aloitetaan table elementillä</span>, otsikko osio erotetaan thead -elementillä, sisältö erotetaan tbody elementillä. Rivi merkataan tr elementillä ja sen sisälle laitetaan solut td elementillä. (p) </p>
 		<p>Tee alla olevista soluista taulukko ja laita taulukolle attribuutit id[taulukko1] ja luokka class[taulukko]. (p)</p>
@@ -37,6 +39,7 @@
 				<td><p>Solu33 (p)</p></td>
 			</tr>
 		</table id=" taulukko1" class="taulukko">
+		</div>
 		<h2>Listat (h2)</h2>
 		<p>Listat sisältävät lista tyyppi elementin, ol tai ul ja jokainen listan ns. entry merkitään li elementillä. (p)</p>
 		
@@ -87,10 +90,11 @@
   <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
 </article>
 		</ol> 
-<script>function setClass() {
+<script>
+	function setClass() {
 	var element = document.getElementById("guid3");
 	element.classList.toggle("jsharkkatyyli");
-	}</script>
-	<button onclick="setClass()">Paina</button>
+	}
+</script>
 			</body>
 </html>
